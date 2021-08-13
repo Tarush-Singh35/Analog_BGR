@@ -1,0 +1,29 @@
+* D:\E-SIM\ANALOG_BGR_FINAL\ANALOG_BGR_FINAL.cir
+
+* EESchema Netlist Version 1.1 (Spice format) creation date: 08/04/21 13:48:32
+
+* To exclude a component from the Spice Netlist add [Spice_Netlist_Enabled] user FIELD set to: N
+* To reorder the component spice node sequence add [Spice_Node_Sequence] user FIELD and define sequence: 2,1,0
+
+* Sheet Name: /
+R4  /VDD Net-_M24-Pad1_ resistor		
+M24  Net-_M24-Pad1_ /EN Net-_M20-Pad1_ GND mosfet_n		
+M20  Net-_M20-Pad1_ Net-_M1-Pad1_ GND GND mosfet_n		
+M21  Net-_M21-Pad1_ /EN Net-_M21-Pad3_ GND mosfet_n		
+M22  Net-_M22-Pad1_ /EN Net-_M22-Pad3_ GND mosfet_n		
+R1  Net-_M22-Pad3_ Net-_Q2-Pad3_ resistor		
+Q1  GND GND Net-_M21-Pad3_ eSim_PNP		
+Q2  GND GND Net-_Q2-Pad3_ eSim_PNP		
+Q3  GND GND Net-_Q3-Pad3_ eSim_PNP		
+R2  /VREF Net-_Q3-Pad3_ resistor		
+R3  /VREF GND resistor		
+M9  Net-_M1-Pad2_ Net-_M20-Pad1_ GND GND mosfet_n		
+M4  Net-_M1-Pad1_ Net-_M1-Pad1_ Net-_M21-Pad1_ GND mosfet_n		
+M5  Net-_M1-Pad2_ Net-_M1-Pad1_ Net-_M22-Pad1_ GND mosfet_n		
+M23  Net-_M23-Pad1_ /EN /VREF GND mosfet_n		
+M1  Net-_M1-Pad1_ Net-_M1-Pad2_ /VDD /VDD mosfet_p		
+M2  Net-_M1-Pad2_ Net-_M1-Pad2_ /VDD /VDD mosfet_p		
+M3  Net-_M23-Pad1_ Net-_M1-Pad2_ /VDD /VDD mosfet_p		
+U1  /EN /VREF /VDD PORT		
+
+.end
