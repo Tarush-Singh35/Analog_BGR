@@ -6,7 +6,9 @@ This BGR circuit is built on the Google-Skywater 130nm node. It is a mature 180n
 # Tool's Used
 
 1)E-sim
+
 2)Ngspice
+
 3)Magic
 
 # SIMULATIONS AND OUTPUT'S
