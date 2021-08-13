@@ -1,0 +1,47 @@
+*ANALOG BANDGAP REFERENCE CIRCUIT  
+
+.options savecurrents
+.lib "sky130_fd_pr/models/sky130.lib.spice" tt
+.include "sky130_fd_pr/models/sky130_fd_pr__model__pnp.model.spice"
+
+*BGR CIRCUIT
+
+R4  VDD V3 200k		
+xM24  Net-_M24-Pad1_ EN Net-_M20-Pad1_ GND sky130_fd_pr__nfet_g5v0d10v5 l=5 w=20		
+xM20  Net-_M20-Pad1_ Net-_M1-Pad1_ GND GND sky130_fd_pr__nfet_g5v0d10v5 l=5 w=20		
+xM21  Net-_M21-Pad1_ EN V4 GND sky130_fd_pr__nfet_g5v0d10v5 l=5 w=20		
+xM22  Net-_M22-Pad1_ EN V5 GND sky130_fd_pr__nfet_g5v0d10v5 l=5 w=20		
+R1  Net-_M22-Pad3_ Net-_Q2-Pad3_ 31k		
+xQ1  GND GND Net-_M21-Pad3_ GND sky130_fd_pr__pnp_05v5_W3p40L3p40 M=1		
+xQ2  GND GND Net-_Q2-Pad3_ GND sky130_fd_pr__pnp_05v5_W3p40L3p40 M=8		
+xQ3  GND GND V1 GND sky130_fd_pr__pnp_05v5_W3p40L3p40 M=1		
+R2  VREF V1 282.1k		
+R3  VREF GND 100MEG		
+xM9  Net-_M1-Pad2_ Net-_M20-Pad1_ GND GND sky130_fd_pr__nfet_g5v0d10v5 l=5 w=20		
+xM4  Net-_M1-Pad1_ Net-_M1-Pad1_ Net-_M21-Pad1_ GND sky130_fd_pr__nfet_g5v0d10v5 l=5 w=20		
+xM5  Net-_M1-Pad2_ Net-_M1-Pad1_ Net-_M22-Pad1_ GND sky130_fd_pr__nfet_g5v0d10v5 l=5 w=20		
+xM23  Net-_M23-Pad1_ EN V6 GND sky130_fd_pr__nfet_g5v0d10v5 l=5 w=20		
+xM1  Net-_M1-Pad1_ Net-_M1-Pad2_ VDD VDD sky130_fd_pr__pfet_g5v0d10v5 l=5 w=20		
+xM2  Net-_M1-Pad2_ Net-_M1-Pad2_ VDD VDD sky130_fd_pr__pfet_g5v0d10v5 l=5 w=20		
+xM3  Net-_M23-Pad1_ Net-_M1-Pad2_ VDD VDD sky130_fd_pr__pfet_g5v0d10v5 l=5 w=20	
+
+VS1 V3 Net-_M24-Pad1_ DC 0V
+VS2 V4 Net-_M21-Pad3_ DC 0V
+VS3 V5 Net-_M22-Pad3_ DC 0V
+VS4 V6 VREF DC 0V	
+
+Vdd VDD GND dc 3.3V
+VD EN GND pulse(0V 3.3V 100u 0 0 0.5 1)				
+
+.tran 1u 500u
+
+.control
+
+run
+
+plot V(EN)
+plot -I(Vdd)
+
+.endc
+
+.end
