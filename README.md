@@ -11,6 +11,24 @@ This BGR circuit is built on the Google-Skywater 130nm node. It is a mature 180n
 
 3)Magic
 
+# To Running graphical Linux applications on Windows 10 using the Windows Subsystem for Linux
+
+follow the link <A HREF = "https://www.youtube.com/watch?v=HGrR7SLhgy8&list=PLEAC5YKV9X4tbrpQFZuSkuKagIMlaszjM&index=9"> Click here </A>
+
+# Downloading the files on your System
+1) Run the Ubuntu in you window WLS(this will only work for Windows 10 64 bit) and you don't need to install the git because the package is already installed in it
+
+## Copy the Following Command one by one
+1) sudo apt-get install git (if git is not installed)
+2) git clone https://github.com/kunalg123/vsdflow.git
+3) cd vsdflow
+4) chmod 777 opensource_eda_tool_install.sh
+5) ./opensource_eda_tool_install.sh 
+6) git clone  https://github.com/praharshapm/vsdmixedsignalflow
+7) cd vsdmixedsignalflow
+8) magic -T sky130A.tech
+
+
 # SIMULATIONS AND OUTPUT'S
 ## Temperature Variation and Coefficient
 ### Prelayout
@@ -74,6 +92,12 @@ Output Voltage
 ### Magic Done using Windows Subsytem Linux and X11_Server 
 
 ![layout1 13-08-2021 22_57_02](https://user-images.githubusercontent.com/86368099/129400020-070904ac-33a8-47a7-8e79-2640164f5565.png)
+
+# To get Familiar with MAGIC COMMANDS AND SKYWATER 130nm Technology Files
+
+<A HREF = "http://bwrcs.eecs.berkeley.edu/Classes/IcBook/magic/"> See The Magic </A>
+
+<A HREF = "https://skywater-pdk.readthedocs.io/en/latest/"> Read The This Before Designing </A>
 
 # Acknowledgement
 
