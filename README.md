@@ -3,6 +3,10 @@ A Bandgap Reference is an analog circuit, which is used to provide a constant ou
 Its is designed by using Sky130nm Technology and Tools here used are Magic for Layout and Circuit Design and Netlist Generation is doen using E-Sim
 # Technology
 This BGR circuit is built on the Google-Skywater 130nm node. It is a mature 180nm-130nm hybrid technology originally developed internally by Cypress Semiconductor. The SkyWater Open Source PDK is a collaboration between Google and SkyWater Technology Foundry to provide a fully open source Process Design Kit and related resources, which can be used to create manufacturable designs at SkyWater’s facility.
+# Performance Parameter
+
+![Table pdf - Adobe Acrobat Reader DC (32-bit) 20-08-2021 23_00_10 (2)](https://user-images.githubusercontent.com/86368099/130271651-39c366ab-b568-479d-a5cd-4a8735639f4a.png)
+	
 # Tool's Used
 
 1)E-sim
@@ -44,13 +48,13 @@ CTAT,PTAT and OUTPUT curve
 
 ### Postlayout
 
-![dc1_ _analog bandgap reference circuit   13-08-2021 23_06_10](https://user-images.githubusercontent.com/86368099/129398952-2892906f-ba53-4996-8b5d-c33af65e85d9.png)
+![dc1_ _analog bandgap reference circuit   20-08-2021 21_44_46](https://user-images.githubusercontent.com/86368099/130264468-4e4861f6-722a-4c88-8bf3-e56d84395ca4.png)
 Temperature Curve
 
-![dc1_ _analog bandgap reference circuit   13-08-2021 23_06_22](https://user-images.githubusercontent.com/86368099/129398987-f07bc1dd-fa33-49fc-8be8-b7de18e51f11.png)
+![dc1_ _analog bandgap reference circuit   20-08-2021 21_45_04](https://user-images.githubusercontent.com/86368099/130264508-0577d3a1-70f8-4ad1-a8bf-87c94711f465.png)
 Temperature coefficient Curve
 
-![dc1_ _analog bandgap reference circuit   13-08-2021 23_06_40](https://user-images.githubusercontent.com/86368099/129399036-bfa4e68e-aa69-4ffd-be18-281c191a2033.png)
+![dc1_ _analog bandgap reference circuit   20-08-2021 21_45_22](https://user-images.githubusercontent.com/86368099/130264555-ae11054a-ec65-4da0-a89d-3ebd55af80dc.png)
 CTAT,PTAT and OUTPUT curve
 
 ## Voltage Variation and Coefficient
@@ -64,10 +68,10 @@ Output Voltage
 
 ### Postlayout
 
-![dc1_ _analog bandgap reference circuit   13-08-2021 23_19_16](https://user-images.githubusercontent.com/86368099/129399689-8499e55e-21b9-4472-99a1-0b73f8fb1c0f.png)
+![dc1_ _analog bandgap reference circuit   20-08-2021 22_00_49](https://user-images.githubusercontent.com/86368099/130266879-7cc752e2-f50b-47bb-9d94-8aa0fca80c4b.png)
 Voltage Coefficient Voltage
 
-![dc1_ _analog bandgap reference circuit   13-08-2021 23_19_04](https://user-images.githubusercontent.com/86368099/129399715-04a738d4-46f2-4d7e-b861-69e6c3d9a2ff.png)
+![dc1_ _analog bandgap reference circuit   20-08-2021 22_00_56](https://user-images.githubusercontent.com/86368099/130266915-a9226c60-4c98-4300-ad59-d22fb2ddedae.png)
 Output Voltage
 
 ## Startup_Circuit
@@ -75,7 +79,7 @@ Output Voltage
 ![tran1_ _analog bandgap reference circuit   13-08-2021 23_27_55](https://user-images.githubusercontent.com/86368099/129400225-dc28d700-adcf-47d7-84e4-d18cdee95fef.png)
 
 ### Postlayout
-![tran1_ _analog bandgap reference circuit   13-08-2021 23_29_24](https://user-images.githubusercontent.com/86368099/129400388-d3044636-4a65-4f56-a9d3-d00a4d81e219.png)
+![tran1_ _analog bandgap reference circuit   20-08-2021 22_18_59](https://user-images.githubusercontent.com/86368099/130267059-918ef4d0-df19-4d73-9a49-ee94e21a2390.png)
 
 ## EN_IN
 ### Prelayout
@@ -84,9 +88,9 @@ Output Voltage
 ![tran1_ _analog bandgap reference circuit   13-08-2021 23_31_06](https://user-images.githubusercontent.com/86368099/129400571-36a05db7-f196-4a67-a05e-ee418f561732.png)
 
 ### Postlayout
-![tran1_ _analog bandgap reference circuit   13-08-2021 23_32_52](https://user-images.githubusercontent.com/86368099/129400780-09794f27-685c-4679-8a49-ec1c3bdcdf8a.png)
+![tran1_ _analog bandgap reference circuit   20-08-2021 22_20_21](https://user-images.githubusercontent.com/86368099/130267368-3407c5c1-3ee6-4fd8-90cd-f1ceffede694.png)
 
-![tran1_ _analog bandgap reference circuit   13-08-2021 23_33_02](https://user-images.githubusercontent.com/86368099/129400797-d12a22f3-4956-4ace-81bb-43292d31def4.png)
+![tran1_ _analog bandgap reference circuit   20-08-2021 22_20_12](https://user-images.githubusercontent.com/86368099/130267342-76d53e1f-1a53-4735-a366-6a57c9ec5cf3.png)
 
 ## BGR MAGIC
 ### Magic Done using Windows Subsytem Linux and X11_Server 
